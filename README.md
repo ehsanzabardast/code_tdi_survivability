@@ -14,6 +14,13 @@ Specifically, the package includes the following:
 
 The raw data is available at: [http://doi.org/10.5281/zenodo.3723538](http://doi.org/10.5281/zenodo.3723538)
 
-#### Known Issues:
+### Instructions
 
-#### References:
+#### Git log for the repository:
+Using the 'terminal' application, go to the repository's directory on the computer. Use the following command in the repository's directory to fetch the git log in the required format for the script.
+
+<code>git log --all --pretty='format:%H,%ci,%ae'</code>
+
+### Known Issues:
+
+### References:
