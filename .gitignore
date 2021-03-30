@@ -236,3 +236,12 @@ fabric.properties
 .idea/codestream.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij
+.gitignore
+.dat.nosync398d.t2YM8l
+code_tdi_survivability.iml
+encodings.xml
+misc.xml
+modules.xml
+vcs.xml
+profiles_settings.xml
+Project_Default.xml
