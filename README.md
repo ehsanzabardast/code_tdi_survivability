@@ -40,7 +40,7 @@ Each system has three <code>csv</code> files:
 
 Start by collecting the raw data from the web API using <code>01_sonarqube_data_collection.py</code>. 
 Note that there are variables in the script that you have to modify. You also need the git log from the git repository 
-before processing the data. Follow the instructions in [Git log for the repositories](####Git log for the repository)
+before processing the data. Follow the instructions in [Git log for the repositories](#### Git log for the repository)
 for fetching the git log data.
 
 Once you obtained the data, you can run <code>02_survival_data_process.py</code>. Note that similar to the previous
