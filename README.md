@@ -2,6 +2,21 @@
 
 **Authors:** Ehsan Zabardast - Kwabena Ebo Bennin - Javier Gonzalez Huerta
 
+Content
+=======
+
+
+- [Overview](#Overview)
+- [Data](#data)
+- [Instructions](#instructions)
+	- [Running the Scripts](#running-the-scripts)
+    - [Git Log for the Repository](#git-log-for-the-repository)
+- [Known Issues](#known-issues)
+- [Useful Links](#useful-links)
+- [References](#references)
+
+----------------------------------
+
 ### Overview
 
 This package contains the scripts used to conduct the study in the paper <em>Further Investigation of the Survivability 
@@ -29,7 +44,7 @@ under <code>opensource_data</code> directory.
 
 Each system has three <code>csv</code> files:
 * <code>SYSTEM_gitlot.csv</code> for the git log collected from the repository. For more information 
-  refer to [Git log for the repositories](####Git log for the repository) 
+  refer to [Git Log for the Repository](#git-log-for-the-repository) 
 * <code>SYSTEM_issues_data.csv</code> for the raw data extracted from the web API from sonarcloud.
 * <code>SYSTEM_survival_data.csv</code> for the processed data before the survival analysis. Note that this 
   file will be generated as a result of <code>02_survival_data_process.py</code>
@@ -40,7 +55,7 @@ Each system has three <code>csv</code> files:
 
 Start by collecting the raw data from the web API using <code>01_sonarqube_data_collection.py</code>. 
 Note that there are variables in the script that you have to modify. You also need the git log from the git repository 
-before processing the data. Follow the instructions in [Git log for the repositories](#### Git log for the repository)
+before processing the data. Follow the instructions in [Git Log for the Repository](#git-log-for-the-repository)
 for fetching the git log data.
 
 Once you obtained the data, you can run <code>02_survival_data_process.py</code>. Note that similar to the previous
