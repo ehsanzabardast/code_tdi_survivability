@@ -1,8 +1,8 @@
-##The Survival Analysis for Code Technical Debt Items
+## The Survival Analysis for Code Technical Debt Items
 
 **Authors:** Ehsan Zabardast - Kwabena Ebo Bennin - Javier Gonzalez Huerta
 
-###Overview
+### Overview
 
 This package contains the scripts used to conduct the study in the paper <em>Further Investigation of the Survivability 
 of Code Technical Debt Items</em> submitted to the Journal of Software: Evolution and Process.
@@ -20,7 +20,7 @@ Specifically, the package includes the following:
 The raw data is also available at: 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4650072.svg)](https://doi.org/10.5281/zenodo.4650072)
 
-###Data
+### Data
 The raw data for the open-source systems is collected via the web API from 
 [https://sonarcloud.io](https://sonarcloud.io)
 
@@ -34,9 +34,9 @@ Each system has three <code>csv</code> files:
 * <code>SYSTEM_survival_data.csv</code> for the processed data before the survival analysis. Note that this 
   file will be generated as a result of <code>02_survival_data_process.py</code>
 
-###Instructions
+### Instructions
 
-####Running the Scripts
+#### Running the Scripts
 
 Start by collecting the raw data from the web API using <code>01_sonarqube_data_collection.py</code>. 
 Note that there are variables in the script that you have to modify. You also need the git log from the git repository 
@@ -48,7 +48,7 @@ step, you need to change some variables in the script.
 
 Finally, you can use the generated survival data to run the survival analysis in <code>03_survival_analysis.R</code>
 
-####Git Log for the Repository
+#### Git Log for the Repository
 Using the _terminal_ application, go to the repository's directory on the computer. 
 Use the following command in the repository's directory to fetch the git log in the required format for the script.
 
@@ -58,12 +58,12 @@ In order to save the results as a <code>csv</code> file in a certain directory, 
 
 <code>git log --all --pretty='format:%H,%ci,%ae' > intended/directory/for/the/data/gitlog.csv</code>
 
-###Known Issues
+### Known Issues
 
 Depending on the version of the sonarqube, the format of the dates might change. You need to adjust the script 
 in <code>02_survival_data_process.py</code> accordingly.
 
-###Useful Links
+### Useful Links
 
 * [Sonarcloud](https://sonarcloud.io)
 * [Python](https://www.python.org)
@@ -72,7 +72,7 @@ in <code>02_survival_data_process.py</code> accordingly.
 * [PyCharm](https://www.jetbrains.com/pycharm/)
 * [R Studio](https://www.rstudio.com)
 
-###References
+### References
 The manuscript of the paper is submitted to the Journal of Software: Evolution and Process. 
 
 **Paper:** The citation will be updated when published.
